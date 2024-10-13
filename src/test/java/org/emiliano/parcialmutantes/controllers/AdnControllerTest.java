@@ -41,7 +41,7 @@ public class AdnControllerTest {
         when(adnService.isMutant(dna)).thenReturn(true); // Simula que el servicio devuelve verdadero
 
         // Realizar la solicitud y verificar la respuesta
-        mockMvc.perform(post("/mutant/") // Realiza una solicitud POST a /mutants
+        mockMvc.perform(post("/mutant") // Realiza una solicitud POST a /mutants
                         .contentType(MediaType.APPLICATION_JSON) // Especifica el tipo de contenido
                         .content("{\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTTTGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]}")) // Contenido de la solicitud
                 .andExpect(status().isOk()) // Verifica que el estado de la respuesta sea 200 OK
@@ -64,7 +64,7 @@ public class AdnControllerTest {
         when(adnService.isMutant(dna)).thenReturn(false); // Simula que el servicio devuelve falso
 
         // Realizar la solicitud y verificar la respuesta
-        mockMvc.perform(post("/mutant/") // Realiza una solicitud POST a /mutants
+        mockMvc.perform(post("/mutant") // Realiza una solicitud POST a /mutants
                         .contentType(MediaType.APPLICATION_JSON) // Especifica el tipo de contenido
                         .content("{\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTCTGT\",\"AGAAAG\",\"CCCTCA\",\"TCACTG\"]}")) // Contenido de la solicitud
                 .andExpect(status().isForbidden()) // Verifica que el estado de la respuesta sea 403 Forbidden
@@ -76,7 +76,7 @@ public class AdnControllerTest {
     @Test
     public void testSecuenciaInvalida() throws Exception {
         // Realizar la solicitud y verificar la respuesta
-        mockMvc.perform(post("/mutant/") // Realiza una solicitud POST a /mutants
+        mockMvc.perform(post("/mutant") // Realiza una solicitud POST a /mutants
                         .contentType(MediaType.APPLICATION_JSON) // Especifica el tipo de contenido
                         .content("{\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTCTGT\",\"AGAAAG\",\"CCCTCZ\",\"TCACTG\"]}")) // Contenido de la solicitud con una secuencia inválida
                 .andExpect(status().isBadRequest()) // Verifica que el estado de la respuesta sea 400 Bad Request
@@ -99,7 +99,7 @@ public class AdnControllerTest {
         when(adnService.isMutant(dna)).thenThrow(new RuntimeException("Error inesperado")); // Simula que el servicio lanza una excepción
 
         // Realizar la solicitud y verificar la respuesta
-        mockMvc.perform(post("/mutant/") // Realiza una solicitud POST a /mutants
+        mockMvc.perform(post("/mutant") // Realiza una solicitud POST a /mutants
                         .contentType(MediaType.APPLICATION_JSON) // Especifica el tipo de contenido
                         .content("{\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]}")) // Contenido de la solicitud
                 .andExpect(status().isInternalServerError()) // Verifica que el estado de la respuesta sea 500 Internal Server Error
