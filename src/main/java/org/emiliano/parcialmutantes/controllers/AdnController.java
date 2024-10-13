@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController // Se indica que esta clase es un controlador REST
-@RequestMapping("/mutants") // Define la ruta base para las solicitudes
+@RequestMapping("/mutant/") // Define la ruta base para las solicitudes
 public class AdnController {
     private final AdnService adnService; // Declara el servicio que se inyectará en el constructor
 
