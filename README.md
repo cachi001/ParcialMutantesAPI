@@ -44,7 +44,7 @@ Para instalar y ejecutar el proyecto localmente:
      - Puedes acceder a la base de datos H2 en `http://localhost:8080/h2-console/`
        - **URL de JDBC:** `jdbc:h2:mem:testdb`
        - **Usuario:** `sa`
-       - **Contraseña:** ` `
+       - **Contraseña:** ` ` **(vacia)**
 
 ## 🌐 Acceso a la API Hosteada
 ### 📋 Realizar Solicitudes
@@ -66,10 +66,11 @@ Para instalar y ejecutar el proyecto localmente:
     - **Método:** GET
     - **URL:** `https://parcialmutantesapi.onrender.com/stats`
 
-2. Se puede acceder al a base de datos en H2 aca `https://parcialmutantesapi.onrender.com/h2-console`
+2. Se puede acceder a la base de datos en H2 de render aca `https://parcialmutantesapi.onrender.com/h2-console`
+   - **Configuracion para acceder:**
        - **URL de JDBC:** `jdbc:h2:mem:testdb`
        - **Usuario:** `sa`
-       - **Contraseña:** ` `
+       - **Contraseña:** ` ` **(vacia)**
    
 ### 📊 Ejemplos de Respuestas
 
