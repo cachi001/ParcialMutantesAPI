@@ -23,7 +23,7 @@ Esta API permite detectar si un humano es mutante basándose en su secuencia de 
 - Persistencia de los mutantes y humanos en la base de datos.
 
 ## 🔧 Instrucciones de Ejecución
-- Para instalar y ejecutar el proyecto localmente:
+Para instalar y ejecutar el proyecto localmente:
   1. Clonar el repositorio de Git:
      ```bash
      git clone https://github.com/cachi001/ParcialMutantesAPI.git
