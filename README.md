@@ -44,28 +44,33 @@ Para instalar y ejecutar el proyecto localmente:
      - Puedes acceder a la base de datos H2 en `http://localhost:8080/h2-console/`
        - **URL de JDBC:** `jdbc:h2:mem:testdb`
        - **Usuario:** `sa`
-       - **Contraseña:** *(vacío)*
+       - **Contraseña:** ` `
 
 ## 🌐 Acceso a la API Hosteada
 ### 📋 Realizar Solicitudes
-Se pueden enviar solicitudes a la API usando Postman:
+1. Se pueden enviar solicitudes a la API usando Postman:
 
-- **Ejemplo Request para verificar un ADN:**
-  - **Endpoint:** `/mutant`
-  - **Método:** POST
-  - **URL:** `https://parcialmutantesapi.onrender.com/mutant`
-  - **Ejemplo de Cuerpo (JSON):**
-    ```json
-    {
-      "dna": ["CGGTG", "AAAA", "TTTT", "GGTC"]
-    }
-    ```
+  - **Ejemplo Request para verificar un ADN:**
+    - **Endpoint:** `/mutant`
+    - **Método:** POST
+    - **URL:** `https://parcialmutantesapi.onrender.com/mutant`
+    - **Ejemplo de Cuerpo (JSON):**
+      ```json
+      {
+        "dna": ["CGGTG", "AAAA", "TTTT", "GGTC"]
+      }
+      ```
+  
+  - **Ejemplo Request para obtener las estadísticas:**
+    - **Endpoint:** `/stats`
+    - **Método:** GET
+    - **URL:** `https://parcialmutantesapi.onrender.com/stats`
 
-- **Ejemplo Request para obtener las estadísticas:**
-  - **Endpoint:** `/stats`
-  - **Método:** GET
-  - **URL:** `https://parcialmutantesapi.onrender.com/stats`
-
+2. Se puede acceder al a base de datos en H2 aca `https://parcialmutantesapi.onrender.com/h2-console`
+       - **URL de JDBC:** `jdbc:h2:mem:testdb`
+       - **Usuario:** `sa`
+       - **Contraseña:** ` `
+   
 ### 📊 Ejemplos de Respuestas
 
   #### 1. Comprobar ADN
