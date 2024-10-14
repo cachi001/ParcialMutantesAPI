@@ -166,5 +166,8 @@ Se incluye un diagrama de secuencia sobre la arquitectura de la api
 
 [Diagrama de Secuencia](docs/diagrama_de_secuencia.pdf)
 
+![DiagramaDeSecuencia](https://github.com/user-attachments/assets/f853eeb4-5c20-4ce3-9076-f555f5c446fb)
+
+
 
 
