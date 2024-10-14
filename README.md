@@ -145,7 +145,7 @@ Se pueden enviar solicitudes a la API usando Postman:
 - La base de datos H2 se utiliza para almacenar los resultados de las solicitudes de ADN y se reinicia cada vez que se inicia la aplicación localmente.
 
 ## ⚗️ Pruebas
-### Pruebas Unitarias y de Integración
+### Pruebas Unitarias
 La API cuenta con pruebas unitarias que se pueden ejecutar para verificar el funcionamiento de la API sin necesidad de iniciar el servidor.
 
 #### Pruebas de Servicios
