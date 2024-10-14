@@ -161,7 +161,10 @@ La API cuenta con pruebas unitarias que se pueden ejecutar para verificar el fun
   ```bash
   ./gradlew test
   ```
-  
+## 🖥️ Diagrama de Secuencia
+Se incluye un diagrama de secuencia sobre la arquitectura de la api
+
+![Diagrama de Secuencia](docs/diagrama_de_secuencia.pdf)
 
 
 
