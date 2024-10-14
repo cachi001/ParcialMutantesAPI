@@ -68,7 +68,7 @@ Se pueden enviar solicitudes a la API usando Postman:
 
 ### 📊 Ejemplos de Respuestas
 
-  ### 1. Comprobar ADN
+  #### 1. Comprobar ADN
   - **Endpoint**: `/mutant`
   - **Método**: `POST`
   - **Descripción**: Este endpoint recibe un ADN en formato JSON y verifica si pertenece a un mutante.
@@ -115,7 +115,7 @@ Se pueden enviar solicitudes a la API usando Postman:
           }
           ```
   
-  ### 2. Obtener estadísticas
+  #### 2. Obtener estadísticas
   
   - **Endpoint**: `/stats`
   - **Método**: `GET`
